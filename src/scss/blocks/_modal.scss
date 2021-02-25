@@ -1,0 +1,76 @@
+.modal {
+    @include modal;
+    &__order {
+        position: relative;
+        padding: 30px 68px 100px 68px;
+        max-width: 490px;
+        background: 
+            url('../img/wave.png') no-repeat,
+            url('../img/geo.png') no-repeat,
+            url('../img/grassSmall.png') no-repeat,
+            url('../img/grass.png') no-repeat,
+            url('../img/wave2.png') no-repeat,;
+        background-position: 
+            top,
+            bottom left, 
+            bottom left 60px, 
+            bottom right 15px,
+            bottom;
+        background-color: #fff;    
+
+    }
+    &__title {
+        margin: auto;
+        font-size: 22px;
+        width: 338px;
+        text-align: center;
+        color: #fff;
+        font-family: "PTSansCaption";
+        margin-bottom: 96px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        input {
+            border: none;
+            border-bottom: 1px solid #7DBCAF;
+            padding: 10px;
+            outline: none;
+            font-size: 16px;
+            margin-bottom: 30px;
+            width: 347px;
+        }
+        textarea {
+            resize: none;
+            padding: 10px;
+            border: 1px solid #7DBCAF;
+            font-family: 'roboto';
+            font-weight: 100;
+            width: 347px;
+            height: 150px;
+        }
+
+    }
+    .send {
+        margin: auto;
+    }
+    &__close {
+        position: absolute;
+        right: -50px;
+        top: 0;
+        width: 29px;
+        height: 29px;
+        background-color: #7DBCAF;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg {
+            width: 9px;
+            height: 9px;
+            fill: #fff
+        }
+    }
+}

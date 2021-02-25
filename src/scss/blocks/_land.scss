@@ -1,0 +1,99 @@
+.land {
+    &__title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    &__items {
+        list-style: none;
+    }
+    &__item {
+        display: flex;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 28px;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 12px;
+            left: 0px;
+            width: 15px;
+            height: 1px;
+            background-color: #7DBCAF;
+            margin-right: 10px;
+        }
+    }
+    &__cost {
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+    &__descr {
+        display: flex;
+        &-title {
+            font-family: 'PTSansCaption';
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 18px;
+        width: 530px;
+        margin-left: 18px;
+        span {
+            margin-top: 10px;
+        }
+    }
+    &__price {
+        padding-top: 90px;
+    }
+    &__btn {
+        display: flex;
+        margin-left: 260px;
+        margin-top: 80px;
+    }
+}
+
+table {
+    width: calc(100% - 260px);
+    margin-left: 260px;
+    table-layout:fixed;
+	border-collapse: collapse;
+}
+
+td {
+    padding: 1em 0 0 0;  
+    vertical-align: bottom;
+}
+
+td span{
+    background-color:#fff;
+}
+
+td:first-child {
+    text-align: left;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+    div {
+        width: 434px !important;
+    }
+}
+	
+td div:first-child::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    width:1500px;
+    height:0px ;
+    margin-left: 10px;
+    border-bottom:2px dotted #7DBCAF;
+}
+
+td:last-child {
+	text-align:left;
+	width:8em;
+    padding-left: 3px;
+}

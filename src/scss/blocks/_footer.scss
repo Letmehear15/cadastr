@@ -1,0 +1,55 @@
+.footer {
+    padding: 57px 0;
+    background: url('../img/footer.png') no-repeat;
+    background-size: contain;
+    background-color: $mainColor;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        div {
+            margin-bottom: 15px;
+            a {
+                text-decoration: none;
+                color: #fff
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+    &__contact {
+        margin-bottom: 15px;
+        a {
+            text-decoration: none;
+            color: #fff
+        }
+    }
+    &__social {
+        display: flex;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 20px;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

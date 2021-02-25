@@ -1,0 +1,25 @@
+.about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    background: url('../img/about.jpg') no-repeat;
+    background-size: contain;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        text-align: center;
+        font-family: 'PTSansCaption';
+        font-size: 24px;
+        margin-bottom: 154px;
+    }
+    &__descr {
+        width: 947px;
+        font-size: 17px;
+        margin-bottom: 20px;
+        line-height: 20px;
+        
+    }
+}

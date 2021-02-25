@@ -1,0 +1,96 @@
+.step {
+    padding-bottom: 188px;
+    &__title {
+        font-family: 'PTSansCaption';
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__progress {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        .active{
+            opacity: 1;
+        }
+    }
+    &__items {
+        margin-bottom: 50px;
+        height: auto;
+        min-height: 550px;
+    }
+    .t-panel{
+        display: flex;
+        background-color: #F8F8F8;
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+        overflow: hidden;
+        height: auto;
+        max-height: 0;
+        border-radius: 180px 0px 180px 0px;
+        -moz-border-radius: 180px 0px 180px 0px;
+        -webkit-border-radius: 180px 0px 180px 0px;
+        img {
+            width: 412px;
+            height: 412px;
+            border-radius: 180px 0px 0px 0px;
+            -moz-border-radius: 180px 0px 0px 0px;
+            -webkit-border-radius: 180px 0px 0px 0px;
+        }
+        &.active{
+            opacity: 1;
+            height: auto;
+            max-height: 500px;
+        }
+    }
+    &__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 24px;
+        font-family: 'PTSansCaption';
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #7DBCAF;
+        opacity: .5;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            border: 2px solid #7DBCAF;
+            border-radius: 50%;
+        }
+    }
+    &__line {
+        width: 85px;
+        height: 2px;
+        margin: 0 39px;
+        background-color: #7DBCAF;
+    }
+
+    &__subtitle {
+        font-size: "PTSansCaption";
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    &__descr {
+        padding: 80px 77px 201px 40px;
+        span {
+            display: block;
+            width: 547px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    &__btn {
+        margin: auto;
+    }
+}

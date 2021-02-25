@@ -1,0 +1,218 @@
+@media only screen and (max-width: 991px) { 
+    .land {
+        &__price {
+            table {
+                margin-left: 0;
+                width: 100%;
+                tr {
+                    display: flex;
+                    justify-content: space-between;
+                    td:first-child {
+                        flex-grow: 1;
+                    }
+                }
+                td div:first-child::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 3px;
+                    width:1500px;
+                    height:0px ;
+                    margin-left: 10px;
+                    border-bottom:2px dotted #7DBCAF;
+                }
+                td:last-child {
+                    align-self: flex-end;
+                }
+            }
+        }
+        &__btn {
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    .land {
+        &__descr {
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 250px;
+                height: 240px;
+            }
+            &-title {
+                text-align: center;
+            }
+        }
+        &__text {
+            width: auto;
+            margin-left: 0;
+            margin-top: 60px;
+        }
+        table {
+            td div:first-child::after {
+                display: none;
+            }
+            td:first-child {
+                text-align: center;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            td:last-child {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                padding-left: 0;
+                margin: auto;
+                text-align:center;
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 99px;
+                    border: 1px solid #7DBCAF;
+                    padding: 16px 18px;
+                    border-radius: 20px;
+                }
+            }
+            tr {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 482px) {
+    .land {
+        padding-top: 120px;
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            z-index: 999999;
+            transition: all .3s;
+            &__contacts,
+            &__desktop  {
+                display: none;
+            }
+            &__mobile {
+                display: block;
+                width:  130px !important;
+                height: 43px !important;
+            }
+            &__burger {
+                display: flex;
+                flex-direction: column;
+                span {
+                    display: block;
+                    width: 25px;
+                    height: 2px;
+                    background-color: #fff;
+                    margin-bottom: 4px;
+                }
+            }
+            &__call {
+                display: block;
+                img {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+            &__menu {
+                transition: all .4s;
+                transform: translateY(-100%);
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 86px;
+                padding-bottom: 52px;
+                background: #7DBCAF;
+                position: absolute;
+                top: 0;
+                left: 0;
+                li:first-of-type {
+                    display: block;
+                }
+            }
+            &__close {
+                position: absolute;
+                display: block;
+                top: 40px;
+                right: 40px;
+                span {
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    background-color: #fff;
+                    transform: rotate(45deg);
+                    margin-bottom: -2px;
+                }
+                span:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
+            &__social {
+                display: flex;
+                margin-top: 50px;
+                a {
+                    margin-right: 30px;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    svg {
+                        width: 15px;
+                        height: 15px;
+                        fill: #7DBCAF;
+                    }
+                }
+            }
+            &__item {
+                display: flex;
+                margin-bottom: 30px;
+                width: 113px;
+                margin-right: 0 !important;
+                a {
+                    display: block;
+                    color: #fff !important;
+                }
+            }
+        }
+        &__btn {
+            flex-direction: column;
+            align-items: center;
+            .btn {
+                margin-right: 0 !important;
+                margin-bottom: 25px;
+                width: 224px;
+                height: 49px;
+            }
+            .link-white {
+                padding: 14px 70px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 433px) {
+    .land {
+        &__price {
+            td:first-child div {
+                width: auto!important;
+            }
+        }
+    }
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet"/>
+    <title>Кадастр</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__logo">
+                    <a href="./index.html">
+                        <img class="header__desktop" src="./img/logo.png" alt="logo">
+                        <img class="header__mobile" src="./img/footerLogo.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="header__menu">
+                    <div class="header__close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <li class="header__item">
+                        <a href="./index.html" class="servicesCompany">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./pages/services.html" class="servicesCompany">Услуги</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./index.html#about" class="abotCompany">О компании</a>
+                    </li>
+                    <li style="margin-right: 0;" class="header__item">
+                        <a href="./pages/contacts.html" class="contactsCompany">Контакты</a>
+                    </li>
+                    <div class="header__social">
+                        <div>
+                            <a href="https://vk.com/club105030283" target="_blank">
+                                <svg fill="#1F1C73" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"  /></svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://instagram.com/kadastr_kolomna?igshid=1s52i033q5n4z" target="_blank">
+                                <svg fill="#1F1C73" viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg"><path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/><path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/><path d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+                <div class="header__contacts">
+                    <div class="header__contact">
+                        <a href="tel:89265691647">8 (926) 569-16-47</a> 
+                    </div>
+                    <div class="header__contact">
+                        <a href="tel:89165010538">8 (916) 501-05-38</a>
+                    </div>
+                    <div class="header__contact">
+                        <a href="tel:89268978407">8 (926) 897-84-07</a>
+                    </div>
+                </div>
+                <div class="header__call">
+                    <a href="tel:89265691647">
+                        <img src="./icon/phone.png" alt="phone">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <h1 style="display: none;">Кадастр</h1>
+            <div class="main__wrapper">
+                <h2 class="main__title">
+                    Кадастровые и геодезические <br class="main__mobile"> услуги в Коломне <br class="main__desktop">
+                    и Московской области — <span>быстро, качественно, с гарантией</span>
+                </h2>
+                <a href="./pages/services.html" class="link main__link">
+                    Посмотреть услуги
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="adtv">
+        <div class="adtv__blur"></div>
+        <div class="container">
+            <div class="adtv__wrapper">
+                <div class="adtv__item">
+                    <img src="./img/tag.png" alt="tag">
+                    <span>Демократичная ценовая <br>
+                        политика</span>
+                </div>
+                <div class="adtv__item">
+                    <img src="./img/bag.png" alt="bag">
+                    <span>Качественное выполнение <br>
+                        работ</span>
+                </div>
+                <div class="adtv__item">
+                    <img src="./img/advantages.png" alt="advantages">
+                    <span>Сжатые сроки <br>
+                        оформления документов</span>
+                </div>
+                <div class="adtv__item">
+                    <img src="./img/award.png" alt="award">
+                    <span>Есть все необходимые<br>
+                        допуски и лицензии</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <h2 class="about__title">О компании</h2>
+                <p class="about__descr">
+                    <span class="bolder">Компания «Кадастр +»</span>  является активно развивающейся организацией в сфере
+                    кадастровой деятельности, геодезии, регистрации прав на объекты недвижимости и во
+                    многих других смежных отраслях.
+                    Мы успешно работаем с 2013 года, осуществляем постановку на кадастровый
+                    учёт более 300 объектов в год. 
+                </p>
+                <p class="about__descr">
+                    Сотрудники нашей компании – это
+                    высококвалифицированные специалисты, в том числе аттестованные кадастровые
+                    инженеры с опытом работы более 10 лет. Наши заказчики - это физические и
+                    юридические лица, а также органы власти. География нашей работы Коломенский,
+                    Луховицкий, Егорьевский, Зарайский, Воскресенский и Раменский городские округа
+                    Московской области. 
+                </p>
+                <p class="about__descr">
+                    Наша компания готова предложить большой спектр услуг в области
+                    кадастрового учёта, государственной регистрации прав, получения разрешения на
+                    строительство, оформления подключений к инженерным сетям и многое другое. Имеем
+                    большой опыт ведения объекта от момента выбора и формирования участка до
+                    регистрации права собственности на созданный на таком участке жилой дом с
+                    подключением к инженерным коммуникациям.
+                </p>
+                <p class="about__descr">
+                   <span class="bolder"> Приоритетом нашей компании является принцип индивидуального подхода к
+                    каждому клиенту и достижение конечного результата.</span>
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section class="slider">
+            <div class="container">
+                <div class="slider__wrapper">
+                    <h2 class="slider__title">Наши лицензии и сертификаты</h2>
+                    <div class="slick-slider">
+                        <div class="slider__item">
+                            <div class="slider__img">
+                                <img src="./img/slide1.png" alt="slide">
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__img">
+                                <img src="./img/slide2.png" alt="slide">
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__img ext">
+                                <img style="width: 600px; " src="./img/slide3.png" alt="slide">
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__img ext" >
+                                <img style="width: 600px; " src="./img/slide4.png" alt="slide">
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__img ext">
+                                <img style="width: 600px; " src="./img/slide5.png" alt="slide">
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__img ext">
+                                <img style="width: 600px; " src="./img/slide6.png" alt="slide">
+                            </div>
+                        </div>
+                        <div class="slider__item ext">
+                            <div class="slider__img">
+                                <img style="width: 600px; " src="./img/slide7.png" alt="slide">
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__img">
+                                <img src="./img/slide8.png" alt="slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="step">
+        <div class="container">
+            <div class="step__wrapper ">
+                <h2 class="step__title">
+                    Этапы работы
+                </h2>
+                <div class="step__items tabs">
+                    <div class=" step__progress">
+                        <div data-name="step1" class="t-btn step__number active">1</div>
+                        <div class="step__line"></div>
+                        <div data-name="step2" class="t-btn step__number">2</div>
+                        <div class="step__line"></div>
+                        <div data-name="step3" class="t-btn step__number">3</div>
+                        <div class="step__line"></div>
+                        <div data-name="step4" class="t-btn step__number">4</div>
+                        <div class="step__line"></div>
+                        <div data-name="step5" class="t-btn step__number">5</div>
+                    </div>
+                    <div class="t-panel-container">
+                        <div class="t-panel step1 active step__item">
+                            <img src="./img/step1.jpg" alt="step1">
+                            <div class="t-panel__bg1">
+                                <span>01</span>
+                            </div>
+                            <div class="step__descr">
+                                <h3 class="step__subtitle">Этап 1</h3>
+                                <span>Мы внимательно знакомимся с вашей ситуацией и всеми документами. Проводим первоначальную бесплатную консультацию и предлагаем индивидуальное решение.</span>
+                            </div>
+                        </div>
+                        <div class="t-panel step2 step__item">
+                            <img src="./img/step2.jpg" alt="step2">
+                            <div class="t-panel__bg2">
+                                <span>02</span>
+                            </div>
+                            <div class="step__descr">
+                                <h3 class="step__subtitle">Этап 2</h3>
+                                <span>Мы подробно рассказываем о том, как будет решаться ваш вопрос. Если вас устраивает наше предложение, то мы согласовываем сроки и стоимость работ и подписываем договор. Мы можем подписать договор в нашем офисе или на выезде при индивидуальной встрече.</span>
+                            </div>
+                        </div>
+                        <div class="t-panel step3 step__item">
+                            <img src="./img/step3.png" alt="step3">
+                            <div class="t-panel__bg3">
+                                <span>03</span>
+                            </div>
+                            <div class="step__descr">
+                                <h3 class="step__subtitle">Этап 3</h3>
+                                <span>Выезжаем на личном транспорте на объект для замеров и решения других вопросов, которые не могут быть решены дистанционно. Дата и время согласовываются заранее.</span>
+                            </div>
+                        </div>
+                        <div class="t-panel step4 step__item">
+                            <img src="./img/step4.jpg" alt="step4">
+                            <div class="t-panel__bg4">
+                                <span>04</span>
+                            </div>
+                            <div class="step__descr">
+                                <h3 class="step__subtitle">Этап 4</h3>
+                                <span>Инженер подготавливает все необходимые документы для кадастрового учета (межевой план, технический план и т.д.), каждый этап сопровождается пояснениями от инженера. Связь возможна по SMS, электронной почте или телефону.</span>
+                            </div>
+                        </div>
+                        <div class="t-panel step5 step__item">
+                            <img src="./img/step5.jpg" alt="step5">
+                            <div class="t-panel__bg5">
+                                <span>05</span>
+                            </div>
+                            <div class="step__descr">
+                                <h3 class="step__subtitle">Этап 5</h3>
+                                <span>Мы выдаём полный комплект документов, необходимых для кадастрового учёта и регистрации права. Всегда остаёмся на связи, при необходимости вносим изменения и корректируем документы.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn order step__btn">Заказать консультацию</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__list">
+                    <div>
+                        <a href="./pages/services.html">Услуги</a>
+                    </div>
+                    <div>
+                        <a href="#about">О компании</a>
+                    </div>
+                    <div>
+                        <a href="./pages/contacts.html">Контакты</a>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contact">
+                        <a href="tel:89265691647">8 (926) 569-16-47 </a>
+                    </div>
+                    <div class="footer__contact">
+                        <a href="tel:89165010538">8 (916) 501-05-38</a>
+                    </div>
+                    <div class="footer__contact">
+                        <a href="tel:89268978407">8 (926) 897-84-07</a>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <div>
+                        <a href="https://vk.com/club105030283" target="_blank">
+                            <svg fill="#1F1C73" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"  /></svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://instagram.com/kadastr_kolomna?igshid=1s52i033q5n4z" target="_blank">
+                            <svg fill="#1F1C73" viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg"><path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/><path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/><path d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0" /></svg>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="footer__logo">
+                    <img class="footer__desktop" src="./img/footerLogo.png" alt="logo">
+                    <img class="footer__mobile" src="./img//logo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal_img">
+        <img class="modal__img" src="" alt="photo">
+    </div>
+
+    <div class="modal">
+        <div class="modal__order">
+            <div class="modal__close close">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+                        <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+                            L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+                            c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+                            l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+                            L284.286,256.002z"
+                        />
+                </svg>
+            </div>
+            <h2 class="modal__title">
+                Мы свяжемся с вами 
+                в ближайшее время удобным 
+                вам способом!
+            </h2>
+            <form class="modal__form">
+                <input class="modal__name" name="name" type="text" placeholder="Ваше имя">
+                <input class="modal__phoneNumber" name="phone" type="text" placeholder="Телефон или электронная почта">
+                <textarea class="modal__text" name="text" id="comment" placeholder="Ваш комментарий ..."></textarea>
+            </form>
+            <button class="btn send">Отправить заявку</button>
+            <button class="modal__cancel close">Отмена</button>
+        </div>
+    </div>
+
+    <script src="./js/jqw.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/url.js"></script>
+    <script src="./js/js.js"></script>
+</body>
+</html>

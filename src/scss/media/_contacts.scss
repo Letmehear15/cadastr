@@ -1,0 +1,48 @@
+@media only screen and (max-width: 768px) { 
+    .contactsBlock {
+        padding-top: 120px;
+        &__contacts {
+            flex-direction: column;
+        }
+        &__item {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 482px) { 
+    .contactsBlock {
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        &__news {
+            order: 6;
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 250px;
+                height: 250px;
+            }
+            &-title {
+                font-family: 'PTSansCaption';
+                font-size: 20px;
+            }
+            &-img {
+                justify-content: center;
+                margin-top: 30px;
+                div {
+                    width: 50px;
+                    height: 50px;
+                    svg {
+                        width: 27px;
+                        height: 27px;
+                    }
+                }
+                div:first-of-type {
+                    margin-right: 65px;
+                }
+            }
+        }
+    }
+}
